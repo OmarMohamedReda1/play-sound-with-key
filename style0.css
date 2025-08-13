@@ -1,0 +1,55 @@
+/* --- Reset & base --- */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: #0f1115;
+  color: #e6e6e6;
+  display: grid;
+  place-items: center;
+}
+
+.keys {
+  display:flex;
+  gap: 14px;
+  padding: 24px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #12141a, #0d0f13);
+  box-shadow:
+    0 30px 60px rgba(196, 24, 24, 0.45),
+    inset 0 1px 0 rgba(25, 189, 121, 0.04);
+  overflow-x: auto;
+}
+
+.key {
+  width: 80px;
+  height: 80px;
+  padding: 10px 8px;
+  border-radius: 14px;
+  background: #1a1f29;
+  border: 1px solid #202532;
+  box-shadow:
+    0 6px 0 #0b0e13,
+    0 14px 18px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.04);
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 6px;
+  transition: transform .06s ease, box-shadow .06s ease, background .12s ease;
+  user-select: none;
+}
+
+
+
+
+
+.key kbd {
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  color: #f2f5f9;
+}
